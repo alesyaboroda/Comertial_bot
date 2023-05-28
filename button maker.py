@@ -9,8 +9,8 @@ from telegram import __version__ as TG_VER, ReplyKeyboardMarkup, ReplyKeyboardRe
 from telegram.ext import Application, CommandHandler, ContextTypes, InlineQueryHandler, MessageHandler, filters, \
     ConversationHandler, CallbackQueryHandler, CallbackDataCache, PreCheckoutQueryHandler
 
-token = "6195261195:AAHSQGZ4GXSBYnPPsGdAugtrN81Y6IEYW4o"
-PAYMENT_PROVIDER_TOKEN = "381764678:TEST:55707"
+token = "Bot token"
+PAYMENT_PROVIDER_TOKEN = "Merchant id"
 
 # Stages
 START_ROUTES, END_ROUTES = range(2)
