@@ -1,3 +1,6 @@
+# package to work with database for this project
+
+
 import sqlite3
 import logging
 from random import randint
@@ -82,9 +85,6 @@ def find(search):
     return result
 
 
-print(find('друг'))
-
-
 def delete(name):
     database = sqlite3.connect("files_db")
     cur = database.cursor()
@@ -121,8 +121,3 @@ def create_test_files():
     for file in list_of_files:
         with open(f'Files/{file}', 'w') as f:
             f.write('Create a new text file!')
-
-# get_test_files()
-# create_test_files()
-
-# print(get_list_of_files_in_category())
